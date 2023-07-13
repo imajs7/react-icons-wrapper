@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { RzIcon } from "./components/common/RzIcon/";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Hello!
+      <RzIcon
+        text="test text"
+        iconclasses={["text-white", "text-5xl"]}
+        textClasses={["text-white"]}
+        //iconName="circle-left-arrow"
+      />
     </div>
   );
 }
